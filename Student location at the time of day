@@ -1,0 +1,21 @@
+from time import localtime
+
+activities = {8:  'All students Sleeping',
+              9:  'All students are on their way to class',
+	      10: 'Some students are in the lab', 
+              11: 'All students are at study hall',
+	      12: 'Some students are at lunch', 
+              17: 'All students are in class',
+              18: 'Some students are going to the library',
+              20: 'Meal Breal',
+              22: 'Some Studnts are Resting' }
+
+time_now = localtime()
+hour = time_now.tm_hour
+
+for activity_time in sorted(activities.keys()):
+    if hour < activity_time:
+        print (activities[activity_time])
+        break
+else:
+    print ('Unknown, AFK or All students are sleeping!')
