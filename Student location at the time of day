@@ -8,7 +8,7 @@ activities = {8:  'All students Sleeping',
               17: 'All students are in class',
               18: 'Some students are going to the library',
               20: 'Meal Breal',
-              22: 'Some Studnts are Resting' }
+              22: 'Some Students are Resting' }
 
 time_now = localtime()
 hour = time_now.tm_hour
